@@ -1,0 +1,954 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 30;
+}
+section .icons {
+    display: flex;
+    position:fixed;
+    z-index: 20;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 35px;
+}
+section .icons a {
+    text-decoration: none;
+}
+section .icons .fa-cookie {
+    transform: translateY(310px);
+    width: 42px;
+    height: 42px;
+    border: 5px solid #252060;
+    border-radius: 50%;
+    color: white;
+    background-color: #32b981;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .icons .fa-whatsapp {
+    border-radius: 50%;
+    background-color: #4ac25b;
+    color: white;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(265px);
+    cursor: pointer;
+}
+header > div{
+    background-color: black;
+    padding: 16px 40px 12px 40px;
+}
+header .name {
+    position: absolute;
+    transform: translate(64px, 31px);
+}
+header nav {
+    padding: 0px 40px;
+    border-top: 1px solid #262626; 
+
+    background-color: black;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+header nav > ul {
+    display: flex;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li div:not(.firstDiv,.cover) {
+    padding: 23px 7px;
+    color: #BFBFBF;
+    letter-spacing: 1px;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li div:not(.firstDiv,.cover)::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: -1px;
+    background-color: #0078D6;
+    display: none;
+}
+header nav ul li div:not(.firstDiv):hover::before {
+    display: block;
+}
+header nav ul li .firstDiv:not(.cover) {
+    padding: 23px 7px;
+    color: #BFBFBF;
+    letter-spacing: 1px;
+}
+header nav ul li .firstDiv span {
+    margin-right: 5px;
+}
+header nav ul li ul {
+    position: absolute;
+    padding: 20px 35px;
+    border-radius: 10px;
+    width: 32vw;
+    box-shadow: 0px 0px 10px 0px #2a3641;
+    display: none;
+    background-color: white;
+}
+header nav ul li .nosModeles {
+    width: 32vw;
+}
+header nav ul li .conseils {
+    width: 21vw;
+}
+header nav ul li .services {
+    width: 22vw;
+}
+header nav ul li .notre {
+    width: 23vw;
+}
+header nav ul li {
+   position: relative;
+}
+header nav ul li .tech {
+    width: 22vw;
+    position: absolute;
+    right: 0;
+}
+header nav ul li:hover ul  {
+    display: block;
+}
+header nav ul li:not(.li-1) ul li {
+    padding: 12px 40px 12px 0px;
+    position: relative;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+header nav ul .li-1 ul li {
+    padding: 0px 40px 0px 0px;
+    position: relative;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+header nav ul li ul li:hover {
+    background-color: #E8E8E8;
+    padding-left: 10px;
+}
+/* ///////////////////////////////////////// */
+header nav ul li .cover {
+    width: 135%;
+    padding: 12px;
+}
+header nav ul:first-child {
+    position: relative;
+}
+header nav  .ul-2 {
+    position: absolute;
+    right: -140%;
+    top: -30px;
+    opacity: 0;
+    transition: .3s;
+}
+header nav ul li .cover:hover ul {
+    opacity: 1;
+    top: -20px;
+}
+/* ///////////////////////////////////////////// */
+header nav ul li ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+header nav ul li ul li .right {
+    right: 30px;
+    position: absolute;
+}
+header nav ul li ul li .left {
+    padding-right: 10px;
+}
+/* -----------------Section------------------- */
+.article1 {
+    width: 100%;
+    background-image: url(../imgs/sectionimage.webp);
+    height: 91vh; 
+}
+.greadient {
+    background-image: linear-gradient(to right, black 0%, transparent 48%, transparent 100%);
+    width: 100%;
+    height: 100%;
+    padding: 150px 40px;
+    box-shadow: inset 0px -97px 116px -50px;
+}
+.greadient .titlex ,.greadient4 .titlex {
+    font-family: 'CorpoA', sans-serif; 
+    font-size: 67px;
+    letter-spacing: -4px;
+    color: white;
+}
+.greadient .parax,.greadient4 .parax {
+    color: white;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.greadient .but1 ,.greadient4 .but1 {
+    color: white;
+    background-color: #0078D6;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    height: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin-right: 6px;
+    font-size: 14px;
+    transition: .3s;
+}
+.greadient .but1 {
+    width: 110px;
+}
+.greadient .but1:hover,.greadient4 .but1:hover {
+    background-color: #0065B3;
+}
+.greadient .but2:hover {
+    background-color: #424242;
+}
+.greadient button a {
+    text-decoration: none;
+    color: white;
+}
+.greadient .but2 {
+    width: 140px;
+    background-color: transparent;
+    border: 1px solid #696969;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    height: 45px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: .3s;
+}
+.greadient div {
+    margin-top: 50px;
+}
+ /*------------------------------article2------------------*/
+.article2  {
+    padding: 90px 40px 40px 40px;
+    min-width: 100%;
+}
+
+
+
+.pagination , .paginationy {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.dot,.doty {
+    width: 8px;
+    height: 8px;
+    margin: 10px;
+    background-color: #999999;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.dot.active ,.doty.active  {
+    background-color: #333333;
+}
+
+
+
+
+
+
+
+.article2 > p ,.article3 > p ,.article5 > p ,.article6 > p{
+    font-family: 'CorpoA', sans-serif; 
+    font-size: 42px;
+    color: #333333;
+    letter-spacing: -2px;
+}
+.article2 .heady {
+    width: 75vw;
+    display: flex;
+    padding: 17px 0;
+    border: 1px solid #E8E8E8;
+    border-radius: 25px;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    font-size: 1.1em;
+    justify-content: space-between;
+}
+.article2 ul  {
+    margin: auto;
+    margin-top: 26px;
+    display: flex;
+    border: 1px solid #E8E8E8;
+    border-radius: 30px;
+    width:fit-content;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+    /* justify-content: space-between;*/ 
+}
+.article2 ul li {
+    list-style: none;
+    padding: 20px 31px;
+    text-align: center;
+    color: #767676;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+}
+.article2 ul li:not(.but11,.but61)::before {
+    content: "";
+    width: 1px;
+    height: 60%;
+    position: absolute;
+    background-color: #E8E8E8;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+.article2 ul li:not(.but11,.but61):hover::before {
+    display: none;
+}
+.article2 ul li:not(.but11):hover {
+    background-color: #333333;
+    color: white;
+}
+.article2 ul .but11 {
+    border-radius: 30px 0 0 30px;
+    color: white;
+    background-color: #333333;
+}
+.article2 ul .but61 {
+    border-radius: 0 30px 30px 0;
+}
+/* ///////////////////silder test////////////// */
+
+.article2 .slider-container{
+    position: relative;
+    width: 100%;
+}
+.flexcardx {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.flexcardy {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+/* .flexcardx {
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+} */
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 7);
+    height: 100%;
+    gap: 20px;
+}
+.article3 .slider-container-y {
+    position: relative;
+    width: 100%;
+}
+.slidesy {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 5);
+    /* height: 100%; */
+    gap: 40px;
+}
+.cardx {
+    width: calc((100vw / 3) - 20px);
+    /* width: 32%; */
+    /* padding: 20px; */
+    text-align: center;
+    /* height: 550px; */
+}
+.slide {
+    width: calc((85.5vw / 3) - 20px);
+    /* text-align: center; */
+    position: relative;
+    border-radius: 10px;
+}
+.cardx img {
+    width: 90%;
+    transition: .6s;
+    margin: auto;
+}
+.cardx:hover img {
+    transform: scale(1.04);
+}
+.cardx p {
+    font-family: 'CorpoA', sans-serif; 
+    font-size: 30px;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+}
+.cardx span {
+    color: #767676;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+} 
+.cardx a {
+    text-decoration: none;
+    padding-top: 20px;
+    line-height: 30px;
+    color: #0078D6;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+.cardx .butx {
+    margin-top: 50px;
+    transition: .5s;
+    opacity: 0;
+}
+.cardx:hover .butx {
+    transform: translateY(-30px);
+    opacity: 1;
+}
+.cardx .butx button {
+    margin-top: 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    padding: 7px 20px;
+    width: 60%;
+    transition: .5s;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+.cardx .butx .but111 {
+    border: 1px solid #BBBBBB;
+    background-color: #fff;
+}
+.cardx .butx .but111:hover {
+    background-color: #EBEBEB;
+}
+.cardx .butx .but112 {
+    background-color: #0078D6;
+}
+.cardx .butx .but112:hover {
+    background-color: #014880;
+}
+.cardx .butx .but112 a{
+    color: white;
+}
+.cardx .butx .but111 a{
+    color: #393939;
+}
+.slider-container button:hover , .slider-container-y button:hover {
+    background-color: white;
+    color: #262626;
+}
+#prevBtn , #nextBtn ,#prevBtny , #nextBtny  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #717171;
+    opacity: .7;
+    border: none;
+    box-shadow: 0px 2px 3px 0 #d7cece;
+    cursor: pointer;
+}
+#nextBtn {
+    right: 0;
+}
+#nextBtny {
+    right: 95px;
+}
+/* ----------------------test---------------------- */
+/* .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+} */
+.active, .dot:hover , .active, .doty:hover  {
+    background-color: #717171;
+}
+.article3 {
+    padding: 20px 0 20px 40px ;
+    width: 100%;
+}
+.article3 > p , .article5 > p,.article6 > p{
+    margin-bottom: 20px;
+}
+.article3 > span ,.article5 > span {
+    color: #7C7876;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+/* .flexcardy {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 30px;
+} */
+.slidesy .slide {
+    overflow: hidden;
+}
+.slidesy:hover div img{
+    transform: scale(1.1);
+}
+/* .flexcardy .cardy , .flexcardy .cardyy {
+    width: 29.1%;
+    height: 440px;
+    border-radius: 10px;
+    position: relative;
+} */
+.slidesy .cardy img ,.slidesy .cardyy img {
+    width: 100%;
+    border-radius: 10px;
+    transition:.5s;
+    filter: brightness(.8);
+}
+.cardy > div  {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -140px);
+    transition: .5s;
+    padding: 0 0 0 30px;
+}
+.cardy:hover > div{
+    transform: translate(-50%, -210px);
+}
+.cardy > div button,.cardyy > div button {
+    width: 90%;
+    padding: 14px 0;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: .7s;
+    font-weight: bold;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #0078D6;
+    color: white;
+}
+.cardy button:hover ,.cardyy button:hover {
+    background-color: #014880;
+}
+.cardy a {
+    text-decoration: none;
+}
+.cardy div div a {
+    color: white;
+}
+.cardy div div {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+.cardyy .headyy{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -88px);
+    transition: .5s;
+    padding: 0 0 0 30px;
+}
+.cardyy:hover .headyy {
+    transform: translate(-50%, -158px);
+    /* position: relative; */
+}
+.cardyy div div {
+    width: 80%;
+    color: white;
+    position: absolute;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+.cardyy div div:not(.headyyy) {
+    transform: translateY(-80px);
+}
+.cardyy div .headyyy {
+    transform: translateY(-105px);
+}
+.cardyy div span {
+    color: white;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    position: absolute;
+    transform: translateY(-45px);
+}
+.article4 {
+    width: 100%;
+    /* background-image: url(../imgs/redimage.webp); */
+    height: 120vh;
+    position: relative;
+    cursor: pointer;
+}
+.article4 img {
+    z-index: -3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.greadient4 .but1 {
+    width: 180px;
+}
+.greadient4  {
+    padding: 250px 40px;
+}
+.greadient4 div {
+    transform: translateY(-25px);
+}
+/* ------------------article 5 ----------------- */
+.article5{
+    padding:40px ;
+    width: 100%;
+}
+.article5 .flexcardz {
+    
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(50px);
+    margin: auto;
+    width: 45.3vw;
+}
+.article5 .flexcardz > div {
+    width: 21vw;
+    height: 390px;
+    border-radius: 10px;
+    padding: 0 20px;
+    position: relative;
+    box-shadow: 0 0 6px -3px;
+    transition: .5s;
+}
+.article5 .flexcardz > div:hover {
+    box-shadow: 0 0 9px 2px #BFBFBF;
+}
+.article5 .flexcardz > div img {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    border-radius: 10px 10px 0 0;
+}
+.article5 .flexcardz > div .butz1 {
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    background-color: #0078D6;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    padding: 2px 7px;
+    border: none;
+}
+.article5 .flexcardz > div .butz1 a {
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.article5 .flexcardz > div .pz1 {
+    position: absolute;
+    width: 90%;
+    font-family: 'CorpoA', sans-serif; 
+    color: #333333;
+    font-size: 1.4em;
+    top: 42%;
+    line-height: 28px;
+    transition: .5s;
+    text-decoration: none;
+    transform: translateY(-20px);
+}
+.article5 .flexcardz > a:nth-child(2):hover {
+    color: #0078D6;
+}
+.article5 .flexcardz > div .divz11 {
+    position: absolute;
+    width: 100%;
+    top: 47%;
+}
+.article5 .flexcardz > div .divz11:hover a {
+    color: #0078D6;
+}
+.article5 .flexcardz > div .spanz1 {
+    position: absolute;
+    color: #333333;
+    font-size: 14px;
+    text-decoration: none;
+    transform: translateY(20px);
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    transition: .5s;
+}
+.article5 .flexcardz > div .flexz {
+    display: flex;
+    position: absolute;
+    top: 60%;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.article5 .flexcardz > div .flexz1 {
+    width: 50%;
+}
+.article5 .flexcardz > div .flexz2 {
+    width: 70%;
+}
+.article5 .flexcardz > div .flexz div i {
+    color: #333333;
+    margin-bottom: 15px;
+    transform: translateX(5px);
+}
+.article5 .flexcardz > div .flexz div span{
+    color: #333333;
+    text-align: center;
+    font-weight: 400;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+.article5 .flexcardz > div .pz2 {
+    position: absolute;
+    top: 77%;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #0078D6;
+}
+.article5 .flexcardz > div .butz2 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+    padding: 22px;
+    border-radius: 0 0 10px 10px;
+    border: none;
+    border-top: 1px solid #E8E8E8;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article5 .flexcardz > div .butz2:hover {
+    background-color: #0078D6;
+    transition: .5s;
+}
+.article5 .flexcardz > div .butz2 a {
+    text-decoration: none;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0078D6;
+    width: 100%;
+    position: absolute;
+    transition: .5s;
+    padding: 20px;
+}
+.article5 .flexcardz > div .butz2 a:hover {
+    color: white;
+}
+.article6 {
+    width: 100%;
+    padding: 60px 20px 20px 20px;
+}
+.article6 .grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: 200px 160px 200px; */
+    grid-template-rows: 32% 26% 32%;
+    gap: 20px;
+}
+.article6 .grid div {
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: #0078D6; */
+}
+.article6 .grid div img {
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    border-radius: 10px;
+    filter: brightness(.8);
+    transition: .5s;
+}
+.article6 .grid div:hover img {
+    transform: scale(1.1);
+}
+.article6 .grid div p {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color: white;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+.article6 .grid .gridv1 {
+    grid-area: 1/1/3/3;
+}
+.article6 .grid .gridv2 {
+    grid-area: 1/3/3/4;
+}
+.article6 .grid .gridv3 {
+    grid-area: 1/4/2/5;
+}
+.article6 .grid .gridv7 {
+    grid-area: 2/4/4/5;
+}
+.article7 {
+    width: 100%;
+    padding: 0 40px;
+    margin-bottom: 85px;
+}
+.article7 .head7 {
+    font-size: 60px;
+    font-family: 'CorpoA', sans-serif; 
+    letter-spacing: -2px;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.article7 div p {
+    width: 100%;
+    line-height: 25px;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+    color: #767676;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+} 
+/* -------------------footer------------------- */
+html {
+    scroll-behavior: smooth;
+}
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 30px 40px;
+}
+footer .scroll {
+    padding: 0px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+footer .scroll a i {
+    font-size: 10px;
+}
+footer .scroll span {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+footer .scroll a {
+    color: white;
+    text-decoration: none;
+    width: 60px;
+    text-align: center;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+.footList {
+    padding: 20px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    width: 68%;
+    justify-content: space-between;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+.footList div p {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footList div ul {
+    list-style: none;
+}
+.footList div ul li a {
+    text-decoration: none;
+    color: #C9C9C9;
+    font-size: 15px;
+}
+.footList div ul li a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.footList div ul li {
+    margin-bottom: 15px;
+}
+.footInf {
+    display: flex;
+    border-top: 1px solid #767676;
+    padding: 30px 0 60px;
+    width: 100%;
+    justify-content: space-between;
+}
+.footflex1 ul{
+    display: flex;
+    justify-content: space-between;
+}
+.footflex1 {
+    width: 65%;
+}
+.footflex1 ul li {
+    list-style: none;
+}
+.footflex1 ul li:first-child {
+    position: relative;
+    margin-right: 20px;
+}
+.footflex1 ul li i{
+    color: white;
+    font-size: 7px;
+    position: absolute;
+    right: -15px;
+    top: 7px;
+}
+.footflex1 ul li p{
+    color: white;
+    font-family: 'CorpoA', sans-serif; 
+}
+.footflex1 ul li a{
+    color: #C9C9C9;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: corpo-s-text, Arial, Verdana, Helvetica, sans-serif;
+}
+.footflex1 ul li a:hover {
+    color: white;
+    text-decoration:underline;
+}
+.footflex2 {
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+}
+.footflex2 i {
+    color: white;
+}
